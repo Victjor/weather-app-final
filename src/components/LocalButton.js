@@ -35,6 +35,11 @@ function BotaoLocalizacao({ onBuscarCidade, API_KEY }) {
             const cidade = dados[0].name;
             setMensagem(`Cidade detectada: ${cidade}`);
             
+            // delete a mensagem
+            setTimeout(() => {
+              setMensagem('');
+            }, 2000);
+            
             // chama funcao pra buscar o tempo
             if (onBuscarCidade) {
               onBuscarCidade(cidade);
