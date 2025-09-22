@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, world!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  
+
+</head>
+<body>
+  <body>
+    <div id="SLIDE-BG"> </div>
+  <main>
+    <section id="weather-wrapper">
+      <h1 class="fade-in-title">Weather Check</h1>
+      <div id="weather-search">
+        <input id="search" type="text" placeholder="Search by city" />
+        <input id="submit" type="submit" onclick="fetchWeather()" value="Search" />
+      </div>
+      <div id="weather-data" style="display: none;"></div>
+    </section>
+  </main>
+  <script src="./scripts.js"> </script>
+</body>
+</html>
