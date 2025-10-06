@@ -68,6 +68,9 @@ function BotaoLocalizacao({ onBuscarCidade, API_KEY }) {
           case 3: 
             mensagemErro = 'Tempo limite para obter localização excedido.';
             break;
+          default:
+            mensagemErro = 'Erro desconhecido de geolocalização.';
+            break;
         }
         
         setMensagem(mensagemErro);
