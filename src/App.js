@@ -14,7 +14,7 @@ function App() {
   const [forecastData, setForecastData] = useState(null);
   const [darkMode, setDarkMode] = useState(false);
   
-  const API_KEY = "72957e93ff11bf68e63009c7436a03a4";
+  const API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY;
 
   // pega lat e lon da cidade
   const getLonAndLat = async (cityName) => {
