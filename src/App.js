@@ -306,9 +306,9 @@ function App() {
          style={{
            backgroundImage: darkMode 
              ? `linear-gradient(rgba(39, 15, 42, 0.8), rgba(24, 31, 54, 0.9)), 
-                url(/newyorknight.jpg)`
+                url(${process.env.PUBLIC_URL}/newyorknight.jpg)`
              : `linear-gradient(rgba(251, 191, 36, 0.3), rgba(239, 68, 68, 0.5)), 
-                url(/newyorkday.jpg)`
+                url(${process.env.PUBLIC_URL}/newyorkday.jpg)`
          }}>
 
       <main className="flex items-center justify-center min-h-screen px-4 py-6 sm:py-8 md:py-12">

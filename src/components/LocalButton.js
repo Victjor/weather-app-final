@@ -88,6 +88,7 @@ function BotaoLocalizacao({ onBuscarCidade, API_KEY }) {
                    focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50
                    disabled:opacity-50 disabled:cursor-not-allowed
                    touch-manipulation min-h-[44px] min-w-[44px]"
+                   style={{ boxShadow: '5px 2px 7px rgba(0, 0, 0, 0.5)' }}
         onClick={buscarLocalizacao}
         disabled={carregando}
       >
