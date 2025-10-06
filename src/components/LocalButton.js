@@ -59,13 +59,13 @@ function BotaoLocalizacao({ onBuscarCidade, API_KEY }) {
         let mensagemErro = 'Não foi possível obter sua localização.';
         
         switch(erro.code) {
-          case erro.PERMISSION_DENIED:
+          case 1: 
             mensagemErro = 'Permissão de localização negada.';
             break;
-          case erro.POSITION_UNAVAILABLE:
+          case 2: 
             mensagemErro = 'Informação de localização indisponível.';
             break;
-          case erro.TIMEOUT:
+          case 3: 
             mensagemErro = 'Tempo limite para obter localização excedido.';
             break;
         }
